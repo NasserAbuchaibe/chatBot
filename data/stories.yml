@@ -9,6 +9,15 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
+- story: happy path info covid-19
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_query_validation
+  - intent: info_covid
+  - action: utter_info_covid
+
 - story: sad path 1
   steps:
   - intent: greet

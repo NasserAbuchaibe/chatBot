@@ -8,11 +8,13 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-
+  - info_covid
+  
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Welcome to the Medic virtual service for NM EPS users. This conversation is confidential and will be kept for quality purposes. Your data will be treated in accordance with the personal data treatment policy. Do you authorize the processing of your personal data to continue?"
 
+  
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
@@ -25,9 +27,16 @@ responses:
 
   utter_goodbye:
   - text: "Bye"
+  - text: "goob bye"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_query_validation:
+  - text: "How can I help you? Do you want to validate your symptoms or find general information about Covid-19?"
+
+  utter_info_covid:
+    - text: "COVID-19 is the disease caused by the new coronavirus known as SARS-CoV-2. The WHO first learned of the existence of this new virus on December 31, 2019, when it was informed of a group of cases of \"viral pneumonia\" that had been declared in Wuhan - Republic of China"
 
 session_config:
   session_expiration_time: 60

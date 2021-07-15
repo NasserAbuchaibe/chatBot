@@ -16,6 +16,9 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - I need help
+    - help
+    - help me
 
 - intent: goodbye
   examples: |
@@ -39,7 +42,8 @@ nlu:
     - of course
     - that sounds good
     - correct
-
+    - ok
+    
 - intent: deny
   examples: |
     - no
@@ -90,3 +94,11 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: info_covid
+  examples: |
+    - I want to know about the covid
+    - Info
+    - tell me about covid-19
+    - what is covid-19?
+    - information about covid
